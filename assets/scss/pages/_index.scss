@@ -1,0 +1,160 @@
+.header-index{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 288px 0 288px 200px;
+}
+
+@media(max-width:767px){
+    .header-index{
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true');
+        padding: 155px 0 155px 24px;
+    }
+    .eng-title{
+        font-size:20px;
+    }
+}
+
+@media(max-width:767px){
+  .index-page-item{
+    width: 50%;
+    background-color: $primary-100;
+    padding: 12px 0;
+    text-align: center;
+  }
+  .index-page-item.active{
+    background-color: $primary-200;
+  }
+}
+
+.new-product-title{
+  text-align: center;
+}
+
+.product{
+  position: relative;
+  &-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    color: $primary-400;
+    background-color: $primary-100;
+    font-size: 14px;
+  }
+}
+
+@media(max-width:767px){
+  .product{
+    &-md-row{
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    &-md-col{
+      min-width:316px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
+
+.banner{
+  text-align: center;
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.star-img{
+  position: absolute;
+  width: 48px;
+  top: 68px;
+  left: calc(50% - 397px);
+}
+
+.sparkle-img{
+  position: absolute;
+  width: 76px;
+  bottom: 132px;
+  right: calc(50% - 357px);
+}
+
+@media(max-width:767px){
+  .banner{
+    padding: 64px 0;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded-sm.png?raw=true');
+    overflow: hidden;
+  }
+  .btn{
+    padding: 12px 24px;
+  }
+  .star-img{
+    top: 32px;
+    left: -20px;
+  }
+  .sparkle-img{
+    bottom: 104px;
+    right: -28px;
+  }
+}
+
+.category{
+  position: relative;
+  &-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(black, 0.4);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.inspiration{
+  &-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+  }
+
+  &-col-4{
+    width: calc(100%/12*4);
+    padding: 4px;
+  }
+
+  &-col-6{
+    width: calc(100%/12*6);
+    padding: 4px;
+  }
+
+  &-col-12{
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+@media(max-width:767px){
+  .inspiration{
+    &-row{
+      flex-wrap: nowrap;
+      margin: 0 -8px;
+      img{
+        min-width: 300px;
+      }
+    }
+    &-col-4,&-col-6,&-col-12{
+      width: unset;
+      padding: 0 8px;
+    }
+  }
+}
+
